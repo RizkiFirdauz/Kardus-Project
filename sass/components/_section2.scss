@@ -1,0 +1,51 @@
+.section2 {
+    background-image: url("/static/hello.jpg");
+    background-size: cover;
+    height: 60vh;
+    text-align: left;   
+}
+
+.section2 {
+    .display-4 {
+        padding-top: 12vh;
+        color: white;
+        font-size: 6rem;
+        font-weight: bold;
+        font-family: "Noto Sans JP";
+    }
+
+    .lead {
+        color: white;
+        font-size: 2rem;
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+        font-family: "Roboto Mono";
+    }
+
+    .btn {
+        border: 2px solid rgb(255, 255, 255);
+        font-size: 2rem;
+        color: white;
+        font-family: "Eina 04", system, -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+}
+
+@include respond(phone) {
+    .section2 {
+        padding-top: 5vh;
+        height: 80vh;
+        padding-left: 3vh;
+
+        .display-4 {
+            font-size: 12rem;
+        }
+
+        .lead {
+            font-size: 5rem;
+        }
+
+        .btn {
+            font-size: 4rem;
+        }
+    }
+}
